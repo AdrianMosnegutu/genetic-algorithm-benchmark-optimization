@@ -48,7 +48,7 @@ class Plotter:
             ax_3d.set_zlabel("f(x,y)")
 
         plt.tight_layout()
-        plt.savefig("benchmark_functions.png", dpi=300, bbox_inches="tight")
+        plt.savefig("results/benchmark_functions.png", dpi=300, bbox_inches="tight")
         plt.show()
 
     @staticmethod
@@ -89,7 +89,7 @@ class Plotter:
                 )
 
         plt.tight_layout()
-        plt.savefig("experimental_results.png", dpi=300, bbox_inches="tight")
+        plt.savefig("results/experimental_results.png", dpi=300, bbox_inches="tight")
         plt.show()
 
         # Convergence plots
@@ -124,5 +124,5 @@ class Plotter:
             ax_avg.grid(True)
 
         plt.tight_layout()
-        plt.savefig("convergence_analysis.png", dpi=300, bbox_inches="tight")
+        plt.savefig("results/convergence_analysis.png", dpi=300, bbox_inches="tight")
         plt.show()
